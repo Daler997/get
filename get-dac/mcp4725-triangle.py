@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     try:
         while True:
-            mcp.set_voltage(amplitude * sg.get_sin_wave_amplitude(signal_frequency, time.time()))
+            mcp.set_voltage(amplitude * sg.get_triangle_wave_amplitude(signal_frequency, time.time()))
             sg.wait_for_sampling_period(sampling_frequency)
 
     finally:
